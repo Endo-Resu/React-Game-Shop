@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/..//react game shop/../../react game shop/.idea/React Game Shop.iml" filepath="$PROJECT_DIR$/..//react game shop/../../react game shop/.idea/React Game Shop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/React Game Shop.iml" filepath="$PROJECT_DIR$/.idea/React Game Shop.iml" />
     </modules>
   </component>
 </project>
