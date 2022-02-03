@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import { CartBlock } from "../cart-block";
 import './header.css';
 
 export const Header = () => {
@@ -11,7 +12,7 @@ export const Header = () => {
                 </Link>
             </div>
             <div className="wrapper header__cart-btn-wrapper">
-                cart
+                <CartBlock />
             </div>
         </div>
     )
