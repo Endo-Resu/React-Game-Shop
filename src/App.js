@@ -5,20 +5,25 @@ import {
     Route,
     Link,
 } from "react-router-dom"
+import {Provider} from "react-redux";
 import {HomePage} from "./pages/home-page";
 import {Header} from "./components/header";
+import {store} from "./redux";
 
 
 function App() {
     return (
-        <div className="App">
-            <Router>
-                <Header />
-                <Routes>
-                    <Route path="/" element={<HomePage/>} />
-                </Routes>
-            </Router>
-        </div>
+        <Provider store={store}>
+            <div className="App">
+                <Router>
+                    <Header/>
+                    <Routes>
+                        <Route path="/" element={<HomePage/>}/>
+                    </Routes>
+                </Router>
+            </div>
+        </Provider>
+
     );
 }
 
