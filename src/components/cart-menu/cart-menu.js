@@ -2,13 +2,21 @@ import React from "react";
 import './cart-menu.css'
 import { calcTotalPrice } from "../../utils/utils";
 import { BuyButton } from "../buy-button";
+import { CartItem } from "../cart-item";
 
 export const CartMenu = ({ items, onClick }) => {
     return (
         <div className="cart-menu">
             <div className="cart-menu__games-list">
                 {
-                    items.length > 0 ? items.map(game => game.title) : 'Корзина пуста'
+                    items.length > 0 ? items.map(game =>
+                        <CartItem
+                            key={game.title}
+                            price={game.price}
+                            title={game.title}
+                            id={game.id}
+                        />
+                        ) : 'Корзина пуста'
                 }
             </div>
             {
