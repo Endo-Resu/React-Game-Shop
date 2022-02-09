@@ -9,7 +9,7 @@ import './game-item.css'
 
 export const GameItem = ({ game }) => {
     const navigate = useNavigate();
-    const dispatch = useDispatch;
+    const dispatch = useDispatch();
 
     const handleClick = () => {
         dispatch(setCurrentGame(game))

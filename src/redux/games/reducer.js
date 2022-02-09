@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit'
 
 const gamesSlice = createSlice({
     name: 'games',
@@ -7,10 +7,10 @@ const gamesSlice = createSlice({
     },
     reducers: {
         setCurrentGame: (state, action) => {
-            state.currentGame = action.payload;
+            state.currentGame = action.payload
         },
     }
-})
+});
 
 export const { setCurrentGame } = gamesSlice.actions;
 export default gamesSlice.reducer;
