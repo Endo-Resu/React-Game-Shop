@@ -21,6 +21,7 @@ export const GamePage = () => {
                     height="400px"
                     src={game.video}
                     title="Youtube Video Player"
+                    frameBorder="0"
                     >
                     </iframe>
                 </div>
